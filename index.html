@@ -3,90 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--css-->
+    <!-- Enlace al CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Enlace a tu CSS personalizado -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Inicio - psicologos en linea</title>
 </head>
-<body><!--estructura basica html-->
-    <div class="grid-conteiner">
-        <div class="margin-box">
-            <div class="border-box">
-                <div class="cabeza">
-                    <header><!--menu de navegacion-->
-                        <img src="./assets/PSICOLOGOS EN LINEA.png" alt="logo">
-                        <nav>
-                            <ul>
-                                <li> <a href="./index.html">Inicio</a></li>
-                                <li> <a href="./html/servicios.html">Preguntas Frecuentes-</a></li>
-                                <li> <a href="./html/contacto.html">Sobre Nosotros</a></li>
-                            </ul>
-                        </nav>
-                    </header>
+<body>
+    <!--estructura basica html-->
+    <div class="grid-container">
+        <div class="header">
+            <header>
+                <!--menú de navegación-->
+                <div class="logo-container">
+                    <img src="./assets/logo.png" alt="logo" class="logo">
                 </div>
-                <div class="galeria">
-                    <main>
-                        <div class="padding-box">
-                            <center>
-                                 <h1>Spicologos en Linea</h1>
-                                 <h2>Especialistas en salud mental</h2>
-                            </center>
-                            <section>
-                                <div>
-                                    <div class="block-element">
-                                        <center><img src="./assets/psicologa.jpeg" alt=""></center>
-                                        <p>
-                                             Soy Martina Juárez, profesional especializada en la superación de duelos y momentos 
-                                             traumáticos. Cuento con más de 10 años de experiencia en el área, respaldada por la 
-                                             confianza de mis pacientes y un fuerte sentido del profesionalismo. ¡No dudes en 
-                                              contactarme!
-                                            <center>
-                                                <button><div class="btn-shop">Contactar</div> </button>
-                                            </center>
-                                        </p>
-                                    </div>        
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./html/servicios.html">Preguntas Frecuentes</a></li>
+                        <li><a href="./html/contacto.html">Sobre Nosotros</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <div class="main-content">
+            <div class="content">
+                <div style="text-align: center;">
+                    <h1>Psicólogos en Línea</h1>
+                    <h2>Especialistas en salud mental</h2>
+                </div>
+                <section>
+                    <div class="grid-container content-grid">
+                        <div class="grid-item">
+                            <div class="block-element">
+                                <div style="text-align: center;"><img src="./assets/psicologa.jpeg" alt="psicologa"></div>
+                                <p>
+                                    Soy Martina Juárez, profesional especializada en la superación de duelos y momentos
+                                    traumáticos. Cuento con más de 10 años de experiencia en el área, respaldada por la
+                                    confianza de mis pacientes y un fuerte sentido del profesionalismo. ¡No dudes en
+                                    contactarme!
+                                </p>
+                                <div style="text-align: center;">
+                                    <button class="btn-shop">Contactar</button>
                                 </div>
-                                <div>
-                                    <div class="block-element">
-                                        <center><img src="./assets/psicologia positiva.avif" alt=""></center>
-                                        <p>
-                                             Hola, soy Brenda Durán, especialista en psicología positiva. Mi objetivo es que, a través
-                                             de esta orientación, puedas descubrir una herramienta tan valiosa como tu propia actitud 
-                                             para enfrentar los desafíos que la vida te presente. ¿Qué esperas? ¡Agendemos una cita!
-                                             <center>
-                                                <button><div class="btn-shop">Contactar</div> </button>
-                                             </center>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="block-element">
-                                        <center><img src="./assets/retrato-psicologo-masculino.avif" alt=""></center>
-                                        <p> 
-                                             Soy Juan Cruz Torres, psicoanalista conductista con 10 años de experiencia en el campo y 
-                                             diversas investigaciones realizadas. Considero que, en el contexto actual de la crisis de salud mental 
-                                             que enfrentamos, es fundamental prestar atención a cómo nuestro entorno nos afecta e 
-                                            influye. Estoy a tu disposición, así que no dudes en enviarme tus consultas.
-                                         </p>
-                                             <center>
-                                                <button><div class="btn-shop">Contactar</div> </button>
-                                            </center>
-                                    </div>
-                                </div>
-                            </section>
+                            </div>
                         </div>
-                    </main>
-                </div>
-                <div class="pie">
-                    <footer>
-                        <ul>
-                          <li> <a href="#">Inicio</a></li>
-                          <li> <a href="#">Preguntas Frecuentes</a></li>
-                          <li> <a href="#">Sobre Nosotros</a></li>
-                        </ul>
-                    </footer>
-                </div>
-            </div>        
+                        <div class="grid-item">
+                            <div class="block-element">
+                                <div style="text-align: center;"><img src="./assets/psicologia.positiva" alt="psicologia positiva"></div>
+                                <p>
+                                    Hola, soy Brenda Durán, especialista en psicología positiva. Mi objetivo es que, a través
+                                    de esta orientación, puedas descubrir una herramienta tan valiosa como tu propia actitud
+                                    para enfrentar los desafíos que la vida te presente. ¿Qué esperas? ¡Agendemos una cita!
+                                </p>
+                                <div style="text-align: center;">
+                                    <button class="btn-shop">Contactar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="block-element">
+                                <div style="text-align: center;"><img src="./assets/psicologo.masculino" alt="psicologo"></div>
+                                <p>
+                                    Soy Juan Cruz Torres, psicoanalista conductista con 10 años de experiencia en el campo y
+                                    diversas investigaciones realizadas. Considero que, en el contexto actual de la crisis de salud mental
+                                    que enfrentamos, es fundamental prestar atención a cómo nuestro entorno nos afecta e
+                                    influye. Estoy a tu disposición, así que no dudes en enviarme tus consultas.
+                                </p>
+                                <div style="text-align: center;">
+                                    <button class="btn-shop">Contactar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                </ul>
+            </footer>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 </html>

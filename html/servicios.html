@@ -3,87 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Enlace a tu CSS personalizado -->
     <link rel="stylesheet" href="../css/style.css">
-    <title>servicios</title>
+    <title>Inicio - psicologos en linea</title>
 </head>
 <body>
-    <div class="margin-box">
-        <div class="border-box">
-            <header>
-                <img src="../assets/PSICOLOGOS EN LINEA.png" alt="logo">
-                     <nav>
-                        <ul>
-                            <li> <a href="../index.html">Inicio</a></li>
-                            <li> <a href="./servicios.html">Preguntas Frecuentes-</a></li>
-                            <li> <a href="./contacto.html">Sobre Nosotros</a></li>
-                        </ul>
-                    </nav>
+        <div class="header">
+            <header><!--menú de navegación-->
+                <div class="logo-container">
+                    <img src="../assets/logo.png" alt="logo" class="logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./servicios.html">Preguntas Frecuentes</a></li>
+                        <li><a href="./contacto.html">Sobre Nosotros</a></li>
+                    </ul>
+                </nav>
             </header>
-            <main>
-                <center><h1>Preguntas Frecuentes</h1></center>
-                <section>
-                    <div>
-                        <div class="inline">
-                            <p>
-                                <h2>¿Por que elegir psicologos en linea?</h2>
-                                La terapia en línea te brinda acceso a una gama más amplia 
-                                de profesionales, lo que te permite elegir a un psicólogo que 
-                                se especialice en el área específica que necesitas, sin estar 
-                                limitado por la disponibilidad local.
-                             </p>
-                        </div>
-                    <div>
-                    <div>
-                        <div class="inline">
-                            <p>
-                                 <h2>¿Como agendo una cita?</h2>
-                                 En nuestra pagina de inicio, podras con el boton "contactar"
-                                 alegir al profesional mas acorde a tus necesidades. En breve, el
-                                 psicologo se comunicara para una entrevista inicial, una vez concluida 
-                                 la misma, quedara a disposición del paciente continuar con las sesiones o
-                                 contactar a otro profecional.
-                            </p>
-                        </div>
-                     </div>
-                     <div>
-                        <div class="inline">
-                            <p>
-                                 <h2>¿Como funciona el "perfil del paciente"?</h2>
-                                 El "perfil de paciente" es un sistema que creamos en psicologos en linea 
-                                 que consta de test de preguntas generales, que nos servira de gia para 
-                                 orientarte y sugerirte perfiles de psicologos de acuerdo a tus necesidades.
-                            </p>
-                        </div>
-                        <button><div class="btn-shop">Realizar Test</div> </button> 
-                     </div>
-                     <div>
-                        <div class="inline">
-                            <p>
-                                 <h2>¿Como registro mi cuenta?</h2>
-                                 Solo necesitaras una correo electronico, validar tu identidad y seguir los pasos
-                                 para registrarte
-                            </p>
-                        </div>
-                        <button><div class="btn-shop">Registrate</div> </button>
-                    </div>
-                     <div>
-                        <div class="inline">
-                            <p>
-                                 <h2>¿Qué medio de pago tengo disponible?</h2>
-                                 Una vez que agendes la entrevista inicial, tendras disintos meidos de pago,
-                                 como: transferencia, deposito en efectivo, tarjetas de credito o debito.
-                            </p>
-                        </div>
-                     </div>
-                </section>
-            </main>
-            <footer>
-                <ul>
-                    <li> <a href="#">Inicio</a></li>
-                    <li> <a href="#">Preguntas Frecuentes</a></li>
-                    <li> <a href="#">Sobre Nosotros</a></li>
-                </ul>
-            </footer>
         </div>
+    <main>
+        <div class="content">
+            <div style="text-align: center;">
+                 <h1>Preguntas Frecuentes</h1>
+            </div>
+        </div>
+        <section>
+            <div class="faq-container">
+                <div class="faq">
+                    <input type="checkbox" id="faq1">
+                    <label for="faq1" class="faq-question">¿Por qué elegir psicólogos en línea?</label>
+                    <div class="faq-answer">
+                        <p>
+                            La terapia en línea te brinda acceso a una gama más amplia 
+                            de profesionales, lo que te permite elegir a un psicólogo que 
+                            se especialice en el área específica que necesitas, sin estar 
+                            limitado por la disponibilidad local.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <input type="checkbox" id="faq2">
+                    <label for="faq2" class="faq-question">¿Cómo agendo una cita?</label>
+                    <div class="faq-answer">
+                        <p>
+                            En nuestra página de inicio, podrás con el botón "contactar" 
+                            elegir al profesional más acorde a tus necesidades. En breve, el 
+                            psicólogo se comunicará para una entrevista inicial, una vez concluida 
+                            la misma, quedará a disposición del paciente continuar con las sesiones o 
+                            contactar a otro profesional.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <input type="checkbox" id="faq3">
+                    <label for="faq3" class="faq-question">¿Cómo funciona el "perfil del paciente"?</label>
+                    <div class="faq-answer">
+                        <p>
+                            El "perfil de paciente" es un sistema que creamos en psicólogos en línea 
+                            que consta de test de preguntas generales, que nos servirá de guía para 
+                            orientarte y sugerirte perfiles de psicólogos de acuerdo a tus necesidades.
+                        </p>
+                    </div>
+                </div>
+                <button class="btn-shop">Realizar Test</button>
+                <div class="faq">
+                    <input type="checkbox" id="faq4">
+                    <label for="faq4" class="faq-question">¿Cómo registro mi cuenta?</label>
+                    <div class="faq-answer">
+                        <p>
+                            Solo necesitarás un correo electrónico, validar tu identidad y seguir los pasos 
+                            para registrarte.
+                        </p>
+                    </div>
+                </div>
+                <button class="btn-shop">Regístrate</button>
+                <div class="faq">
+                    <input type="checkbox" id="faq5">
+                    <label for="faq5" class="faq-question">¿Qué medio de pago tengo disponible?</label>
+                    <div class="faq-answer">
+                        <p>
+                            Una vez que agendes la entrevista inicial, tendrás distintos medios de pago, 
+                            como: transferencia, depósito en efectivo, tarjetas de crédito o débito.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer">
+        <footer>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Preguntas Frecuentes</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+            </ul>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 </html>
