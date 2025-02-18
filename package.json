@@ -1,0 +1,23 @@
+{
+  "name": "proyecto.coder",
+  "version": "1.0.0",
+  "description": "psicologos en linea",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jacqueline2801/psicologos.enlinea.git"
+  },
+  "keywords": [
+    "psicologos",
+    "profecionales"
+  ],
+  "author": "Jacqueline",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jacqueline2801/psicologos.enlinea/issues"
+  },
+  "homepage": "https://github.com/Jacqueline2801/psicologos.enlinea#readme"
+}
