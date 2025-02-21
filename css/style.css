@@ -12,11 +12,6 @@ body {
   padding: 0;
   background-color: #499bf8;
 }
-
-.logo-container {
-  width: 100%;
-}
-
 /* Logo */
 .logo {
   width: 100%;
@@ -132,6 +127,18 @@ header nav ul li a {
 }
 
 /* Buttons */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .btn-shop {
   display: inline-block;
   padding: 10px 20px;
@@ -140,12 +147,13 @@ header nav ul li a {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.5s ease; 
+  animation: pulse 1s infinite; 
 }
 
 .btn-shop:hover {
-  background-color: #050505;
+  background-color: rgb(93, 95, 93);
 }
-
 /* Footer */
 .footer {
   grid-area: footer;
