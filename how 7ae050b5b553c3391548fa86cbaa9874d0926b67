@@ -1,0 +1,9 @@
+[33mcommit d65d9628e13490691be0855009413137aa3d34b8[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: Jacqueline <delgadillojacqueline@gmail.com>
+Date:   Mon Feb 17 18:00:45 2025 -0300
+
+    first commit
+
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 8f696b1..6d78f1c 100644[m
+Binary files a/README.md and b/README.md differ
