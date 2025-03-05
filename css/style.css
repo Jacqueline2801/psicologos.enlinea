@@ -88,7 +88,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   flex: 0 0 33.33%;
-  scroll-snap-align: center; /* Añadido para el comportamiento de carrusel */
+  scroll-snap-align: center; 
 }
 /* Header */
 .header {
