@@ -39,20 +39,34 @@
     font-family: $font-family;
     background-color: $primary-color;
   }
-  
-  /* Logo */
   .logo-container {
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative; // Necesario para superponer imágenes
   
     img {
       width: 100%;
       height: auto;
       max-height: 600px;
+      position: absolute; // Superponer imágenes
+      top: 0;
+      left: 0;
+      transition: opacity 1s ease-in-out; // Transiciones suaves
+  
+      &.img1 {
+        // Estilos específicos para la primera imagen
+        z-index: 1;
+        opacity: 1; // Primera imagen inicialmente visible
+      }
+  
+      &.img2 {
+        // Estilos específicos para la segunda imagen
+        z-index: 0;
+        opacity: 0; // Segunda imagen inicialmente oculta
+      }
     }
   }
-  
   /* Header */
   .header {
     grid-area: header;
@@ -78,38 +92,45 @@
       }
     }
   }
-  
-  /* Grid */
-  .grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
-    grid-template-areas: 
-        "header"
-        "content"
-        "footer";
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
-    min-height: 100vh;
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Carrusel */
+.content-grid {
+  display: flex; /* Cambiado a flex para el carrusel */
+  gap: 20px;
+  justify-content: flex-start; /* Alinear elementos al inicio */
+  width: 100%; /* Ajustar el ancho al 100% del contenedor padre */
+  overflow-x: auto; /* Permitir el desplazamiento horizontal */
+  scroll-snap-type: x mandatory; /* Añadido para el comportamiento de carrusel */
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Cambiar la dirección a columna en pantallas pequeñas */
   }
-  
-  .content-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-    width: 100%;
-  
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-    }
-  }
-  
-  /* Estilo de los elementos dentro del grid */
-  .grid-item, .block-element {
-    @include box-style;
-  }
+}
+
+/* Estilo de los elementos dentro del carrusel */
+.grid-item, .block-element {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 0 0 25%; /* Asegurarse de que los elementos no se encogen y ocupan un cuarto del ancho del carrusel */
+  scroll-snap-align: center; /* Añadido para el comportamiento de carrusel */
+  @include box-style;
+}
   
   /* Main content */
   .main-content {
