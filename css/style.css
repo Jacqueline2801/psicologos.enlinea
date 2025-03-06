@@ -43,7 +43,14 @@ body {
   opacity: 0; /* Oculta al inicio */
   z-index: 0; /* Por debajo de la primera imagen */
 }
-
+@media (max-width: 768px) {
+  .img1, .img2 {
+    width: 100%; /* Ocupan el 100% del ancho en móviles */
+    height: auto; /* Sigue siendo proporcional */
+    position: static; /* Evitar problemas de animación en layouts pequeños */
+    z-index: auto; /* Ajustar prioridades si fuera necesario */
+  }
+}
 /* Animaciones */
 @keyframes fadeInOut1 {
   0%, 50% { opacity: 1; } /* Imagen visible hasta la mitad del tiempo */
@@ -252,13 +259,15 @@ header nav ul li a {
 .center-text {
   text-align: center;
 }
-.section-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  grid-template-areas: 
-    "texto formulario";
-  gap: 20px; 
-  padding: 20px;
+@media (min-width: 768px) {
+   .section-grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr; 
+     grid-template-areas: 
+       "texto formulario";
+     gap: 20px; 
+     padding: 20px;
+  }
 }
 .map-container {
   margin-top: 40px;
