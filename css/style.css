@@ -43,7 +43,7 @@ body {
   opacity: 0; /* Oculta al inicio */
   z-index: 0; /* Por debajo de la primera imagen */
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .img1, .img2 {
     width: 100%; /* Ocupan el 100% del ancho en móviles */
     height: auto; /* Sigue siendo proporcional */
