@@ -1,154 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Enlace al CSS de Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Inicio - psicologos en linea</title>
-</head>
-<body>
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
     <!--estructura basica html-->
     <div class="grid-container">
-        <div class="header">
-            <header>
-                <!--menú de navegación-->
-                <div class="logo-container">
-                    <img src="./assets/logo.png" alt="logo 1" class="logo img1">
-                    <img src="./assets/imagen.frase.png" alt="logo 2" class="logo img2">
+      <div class="header">
+        <header>
+          <!--menú de navegación-->
+          <div class="logo-container">
+            <img src="./assets/logo.png" alt="logo 1" class="logo img1" />
+            <img
+              src="./assets/imagen.frase.png"
+              alt="logo 2"
+              class="logo img2"
+            />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./html/servicios.html">Preguntas Frecuentes</a></li>
+              <li><a href="./html/contacto.html">Sobre Nosotros</a></li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div class="main-content">
+        <div class="content">
+          <div style="text-align: center">
+            <h1>Psicólogos en Línea</h1>
+            <h2>Especialistas en salud mental</h2>
+          </div>
+          <section>
+            <div class="grid-container content-grid">
+              <div class="grid-item">
+                <div class="block-element">
+                  <div style="text-align: center">
+                    <img src="./assets/psicologa.jpeg" alt="psicologa" />
+                  </div>
+                  <p>
+                    Soy Martina Juárez, profesional especializada en la
+                    superación de duelos y momentos traumáticos. Cuento con más
+                    de 10 años de experiencia en el área, respaldada por la
+                    confianza de mis pacientes y un fuerte sentido del
+                    profesionalismo. ¡No dudes en contactarme!
+                  </p>
+                  <div style="text-align: center">
+                    <button class="btn-shop">Contactar</button>
+                  </div>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./html/servicios.html">Preguntas Frecuentes</a></li>
-                        <li><a href="./html/contacto.html">Sobre Nosotros</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
-        <div class="main-content">
-            <div class="content">
-                <div style="text-align: center;">
-                    <h1>Psicólogos en Línea</h1>
-                    <h2>Especialistas en salud mental</h2>
+              </div>
+              <div class="grid-item">
+                <div class="block-element">
+                  <div style="text-align: center">
+                    <img
+                      src="./assets/psicologia.positiva"
+                      alt="psicologia positiva"
+                    />
+                  </div>
+                  <p>
+                    Hola, soy Brenda Durán, especialista en psicología positiva.
+                    Mi objetivo es que, a través de esta orientación, puedas
+                    descubrir una herramienta tan valiosa como tu propia actitud
+                    para enfrentar los desafíos que la vida te presente. ¿Qué
+                    esperas? ¡Agendemos una cita!
+                  </p>
+                  <div style="text-align: center">
+                    <button class="btn-shop">Contactar</button>
+                  </div>
                 </div>
-                <section>
-                    <div class="grid-container content-grid">
-                        <div class="grid-item">
-                            <div class="block-element">
-                                <div style="text-align: center;"><img src="./assets/psicologa.jpeg" alt="psicologa"></div>
-                                <p>
-                                    Soy Martina Juárez, profesional especializada en la superación de duelos y momentos
-                                    traumáticos. Cuento con más de 10 años de experiencia en el área, respaldada por la
-                                    confianza de mis pacientes y un fuerte sentido del profesionalismo. ¡No dudes en
-                                    contactarme!
-                                </p>
-                                <div style="text-align: center;">
-                                    <button class="btn-shop">Contactar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="block-element">
-                                <div style="text-align: center;"><img src="./assets/psicologia.positiva" alt="psicologia positiva"></div>
-                                <p>
-                                    Hola, soy Brenda Durán, especialista en psicología positiva. Mi objetivo es que, a través
-                                    de esta orientación, puedas descubrir una herramienta tan valiosa como tu propia actitud
-                                    para enfrentar los desafíos que la vida te presente. ¿Qué esperas? ¡Agendemos una cita!
-                                </p>
-                                <div style="text-align: center;">
-                                    <button class="btn-shop">Contactar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="block-element">
-                                <div style="text-align: center;"><img src="./assets/psicologo.masculino" alt="psicologo"></div>
-                                <p>
-                                    Soy Juan Cruz Torres, psicoanalista conductista con 10 años de experiencia en el campo y
-                                    diversas investigaciones realizadas. Considero que, en el contexto actual de la crisis de salud mental
-                                    que enfrentamos, es fundamental prestar atención a cómo nuestro entorno nos afecta e
-                                    influye. Estoy a tu disposición, así que no dudes en enviarme tus consultas.
-                                </p>
-                                <div style="text-align: center;">
-                                    <button class="btn-shop">Contactar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="block-element">
-                                <div style="text-align: center;"><img src="./assets/psicoanalista.perspectiva.jpg" alt="perspectiva"></div>
-                                <p>
-                                     Hola, soy María González, psicóloga con enfoque en perspectiva de género. 
-                                     Trabajo para empoderar a las personas, especialmente a mujeres y miembros de la comunidad LGBTQ+,
-                                     creando un espacio seguro para abordar temas de género, sexualidad y autoestima. Ofrezco terapias, talleres y charlas para fomentar el bienestar emocional y la equidad.
-                                </p>
-                                <div style="text-align: center;">
-                                    <button class="btn-shop">Contactar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="block-element">
-                                <div style="text-align: center;"><img src="./assets/expercto.en.parejas.jpg" alt="parejas"></div>
-                                <p>
-                                     Hola, soy Marcos Di Legno, psicólogo experto en terapia de pareja. 
-                                     Mi misión es ayudar a las parejas a fortalecer su relación, mejorar la comunicación 
-                                     y resolver conflictos. Ofrezco un espacio seguro y de apoyo para que ambos miembros de la pareja
-                                     puedan expresar sus sentimientos y necesidades. A través de nuestras sesiones, trabajaremos juntos para 
-                                     encontrar soluciones y construir una relación más saludable y satisfactoria.
-                                </p>
-                                <div style="text-align: center;">
-                                    <button class="btn-shop">Contactar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="block-element">
-                                <div style="text-align: center;"><img src="./assets/psicologa.biocodificacion.webp" alt="biodecoficacion"></div>
-                                <p>
-                                     Hola, soy Julia Andrade, psicóloga experta en biodecodificación. Mi enfoque es ayudarte a comprender cómo
-                                     las emociones y experiencias inconscientes pueden influir en tu salud y bienestar. 
-                                     A través de la biodecodificación, buscamos identificar y liberar esos bloqueos emocionales para
-                                      promover la sanación física y emocional. Te ofrezco un espacio seguro y de apoyo para explorar
-                                     y transformar esas experiencias, facilitando tu camino hacia una vida más equilibrada y saludable.
-                                </p>
-                                <div style="text-align: center;">
-                                    <button class="btn-shop">Contactar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="block-element">
-                                <div style="text-align: center;"><img src="./assets/psicologo.duelos.jpg" alt="biodecoficacion"></div>
-                                <p>
-                                     Hola, soy Carlos Esquivel, psicólogo especializado en el manejo del duelo. Mi objetivo es acompañarte en el proceso de pérdida,
-                                     brindándote apoyo emocional y herramientas para superar momentos difíciles. En nuestras sesiones, trabajaremos juntos 
-                                     para entender y aceptar tus emociones, ayudándote a encontrar un camino hacia la recuperación y el bienestar.
-                                </p>
-                                <div style="text-align: center;">
-                                    <button class="btn-shop">Contactar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+              </div>
+              <div class="grid-item">
+                <div class="block-element">
+                  <div style="text-align: center">
+                    <img src="./assets/psicologo.masculino" alt="psicologo" />
+                  </div>
+                  <p>
+                    Soy Juan Cruz Torres, psicoanalista conductista con 10 años
+                    de experiencia en el campo y diversas investigaciones
+                    realizadas. Considero que, en el contexto actual de la
+                    crisis de salud mental que enfrentamos, es fundamental
+                    prestar atención a cómo nuestro entorno nos afecta e
+                    influye. Estoy a tu disposición, así que no dudes en
+                    enviarme tus consultas.
+                  </p>
+                  <div style="text-align: center">
+                    <button class="btn-shop">Contactar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="block-element">
+                  <div style="text-align: center">
+                    <img
+                      src="./assets/psicoanalista.perspectiva.jpg"
+                      alt="perspectiva"
+                    />
+                  </div>
+                  <p>
+                    Hola, soy María González, psicóloga con enfoque en
+                    perspectiva de género. Trabajo para empoderar a las
+                    personas, especialmente a mujeres y miembros de la comunidad
+                    LGBTQ+, creando un espacio seguro para abordar temas de
+                    género, sexualidad y autoestima. Ofrezco terapias, talleres
+                    y charlas para fomentar el bienestar emocional y la equidad.
+                  </p>
+                  <div style="text-align: center">
+                    <button class="btn-shop">Contactar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="block-element">
+                  <div style="text-align: center">
+                    <img src="./assets/expercto.en.parejas.jpg" alt="parejas" />
+                  </div>
+                  <p>
+                    Hola, soy Marcos Di Legno, psicólogo experto en terapia de
+                    pareja. Mi misión es ayudar a las parejas a fortalecer su
+                    relación, mejorar la comunicación y resolver conflictos.
+                    Ofrezco un espacio seguro y de apoyo para que ambos miembros
+                    de la pareja puedan expresar sus sentimientos y necesidades.
+                    A través de nuestras sesiones, trabajaremos juntos para
+                    encontrar soluciones y construir una relación más saludable
+                    y satisfactoria.
+                  </p>
+                  <div style="text-align: center">
+                    <button class="btn-shop">Contactar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="block-element">
+                  <div style="text-align: center">
+                    <img
+                      src="./assets/psicologa.biocodificacion.webp"
+                      alt="biodecoficacion"
+                    />
+                  </div>
+                  <p>
+                    Hola, soy Julia Andrade, psicóloga experta en
+                    biodecodificación. Mi enfoque es ayudarte a comprender cómo
+                    las emociones y experiencias inconscientes pueden influir en
+                    tu salud y bienestar. A través de la biodecodificación,
+                    buscamos identificar y liberar esos bloqueos emocionales
+                    para promover la sanación física y emocional. Te ofrezco un
+                    espacio seguro y de apoyo para explorar y transformar esas
+                    experiencias, facilitando tu camino hacia una vida más
+                    equilibrada y saludable.
+                  </p>
+                  <div style="text-align: center">
+                    <button class="btn-shop">Contactar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item">
+                <div class="block-element">
+                  <div style="text-align: center">
+                    <img
+                      src="./assets/psicologo.duelos.jpg"
+                      alt="biodecoficacion"
+                    />
+                  </div>
+                  <p>
+                    Hola, soy Carlos Esquivel, psicólogo especializado en el
+                    manejo del duelo. Mi objetivo es acompañarte en el proceso
+                    de pérdida, brindándote apoyo emocional y herramientas para
+                    superar momentos difíciles. En nuestras sesiones,
+                    trabajaremos juntos para entender y aceptar tus emociones,
+                    ayudándote a encontrar un camino hacia la recuperación y el
+                    bienestar.
+                  </p>
+                  <div style="text-align: center">
+                    <button class="btn-shop">Contactar</button>
+                  </div>
+                </div>
+              </div>
             </div>
+          </section>
         </div>
-        <div class="footer">
-            <footer>
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                </ul>
-            </footer>
-        </div>
+      </div>
+      <div class="footer">
+        <footer>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+          </ul>
+        </footer>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
