@@ -44,7 +44,7 @@ body {
 @media (max-width: 600px) {
   .logo-container {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .img1,
   .img2 {
