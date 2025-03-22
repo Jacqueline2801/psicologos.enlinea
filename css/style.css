@@ -43,7 +43,7 @@ body {
   opacity: 0; /* Oculta al inicio */
   z-index: 0; /* Por debajo de la primera imagen */
 }
-@media (min-width: 768px) {
+@media (max-width: 100%) {
   .img1,
   .img2 {
     width: auto; /* Ocupan el 100% del ancho en móviles */
@@ -299,6 +299,7 @@ header nav ul li a {
   }
   .formulario {
     grid-area: formulario; /* Área del formulario */
+    width: auto;
     color: #f1f1f1;
     margin-top: 30px;
     margin-left: 2px;
