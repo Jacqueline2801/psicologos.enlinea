@@ -46,7 +46,7 @@ body {
 @media (min-width: 768px) {
   .img1,
   .img2 {
-    width: 100%; /* Ocupan el 100% del ancho en móviles */
+    width: auto; /* Ocupan el 100% del ancho en móviles */
     height: auto; /* Sigue siendo proporcional */
     position: static; /* Evitar problemas de animación en layouts pequeños */
     z-index: auto; /* Ajustar prioridades si fuera necesario */
