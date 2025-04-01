@@ -62,3 +62,19 @@
     font-size: vars.$font-mobile;
   }
 }
+@media (max-width: 768px) {
+  .header {
+    padding: vars.$small-gap 0; // Ajusta el padding para pantallas pequeñas
+    font-size: vars.$small-font-size; // Reduce el tamaño de la fuente
+
+    nav ul {
+      display: flex;
+      flex-direction: column; // Cambia los elementos de navegación a vertical
+      align-items: center;
+
+      li {
+        margin: 5px 0; // Ajusta los márgenes para distribución vertical
+      }
+    }
+  }
+}
