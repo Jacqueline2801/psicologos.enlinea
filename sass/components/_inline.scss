@@ -1,0 +1,17 @@
+@use "../config/variables" as vars;
+@use "../config/tipo" as tipo;
+@use "../config/reset" as reset;
+
+.inline {
+  margin: 20px auto 0 5px; // Optimiza los márgenes
+  font-family: tipo.$fonttext;
+  font-size: vars.$font-size;
+  color: vars.$inline-font-color; // Ajustado al namespace "tipo"
+  border: 2px solid vars.$inline-border-color; // Ajustado al namespace "reset"
+  padding: 20px;
+  border-radius: 10px;
+  background-color: vars.$inline-bg-color;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}

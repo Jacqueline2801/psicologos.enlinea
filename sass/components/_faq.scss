@@ -1,0 +1,44 @@
+@use "../config/variables" as vars;
+@use "../config/tipo" as tipo;
+@use "../config/reset" as reset;
+
+.faq-container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.faq {
+  margin-bottom: 10px;
+  border: 1px solid vars.$faqcolor2; // Desde el módulo "variables"
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  &-question {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 30px 10px 20px 10px;
+    background-color: vars.$faqcolor;
+    color: vars.$faqcolor2;
+    font-family: tipo.$fonttext;
+    font-size: vars.$font-size;
+    cursor: pointer;
+  }
+
+  &-answer {
+    padding: 2px;
+    margin: 25px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height vars.$transition-time ease; // Desde el módulo "variables"
+    color: vars.$faqcolor2; // Desde el módulo "variables"
+    font-family: tipo.$fonttext;
+    font-size: vars.$font-size;
+  }
+
+  input[type="checkbox"]:checked + &-question + &-answer {
+    max-height: 200px;
+  }
+}

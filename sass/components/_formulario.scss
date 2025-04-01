@@ -1,0 +1,15 @@
+@use "../config/variables" as vars;
+@use "../config/tipo" as tipo; // Cambié "vars" por "tipo"
+@use "../config/reset" as reset; // Cambié "vars" por "reset"
+
+.formulario {
+  grid-area: formulario;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  background-color: vars.$inline-bg-color; // Desde variables
+  margin: reset.$form-margin;
+  padding: reset.$form-padding; // Desde reset
+  font-size: tipo.$fonttext;
+  box-sizing: border-box;
+}

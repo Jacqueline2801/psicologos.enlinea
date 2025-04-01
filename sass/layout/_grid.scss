@@ -1,0 +1,46 @@
+@use "../config/variables" as vars;
+@use "../config/tipo" as tipo;
+@use "../config/reset" as reset;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header header"
+    "content content content"
+    "footer footer footer";
+  gap: vars.$large-gap; // Desde el archivo de variables
+  padding: 0;
+  margin-bottom: vars.$large-gap; // Desde el archivo de variables
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.content-grid {
+  display: flex;
+  margin-right: 10px;
+  margin-top: 30px;
+  padding: 0 20px; // Combina `padding-right` y `padding-left`
+  justify-content: flex-start;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.grid-item {
+  background-color: vars.$secundary-color;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px vars.$grid-color;
+  flex: 0 0 33.33%;
+  scroll-snap-align: center;
+}
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "texto formulario";
+  gap: vars.$large-gap; // Desde el archivo de variables
+  padding: 20px;
+}

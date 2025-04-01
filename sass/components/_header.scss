@@ -1,0 +1,30 @@
+@use "../config/variables" as vars;
+@use "../config/tipo" as tipo;
+@use "../config/reset" as reset;
+
+.header {
+  grid-area: header;
+  background-color: vars.$header-bg;
+  color: vars.$primary-color;
+  padding: vars.$large-gap 0;
+  font-size: vars.$font-size;
+  font-family: tipo.$navtext;
+  text-align: center;
+
+  nav {
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        display: inline;
+        margin: 0 10px;
+
+        a {
+          color: vars.$secundary-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

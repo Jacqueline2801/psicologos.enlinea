@@ -1,0 +1,23 @@
+@use "../config/variables" as vars;
+@use "../config/tipo" as tipo;
+@use "../config/reset" as reset;
+
+.footer {
+  grid-area: footer;
+  background-color: vars.$footer-color;
+  color: vars.$secundary-color;
+  text-align: center;
+  padding: 10px 0;
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    margin: 0 10px;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

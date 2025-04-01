@@ -1,0 +1,26 @@
+.logo-container {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden;
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite; /* Repite siempre */
+  }
+}
+.img1 {
+  animation: fadeInOut1 6s infinite ease-in-out;
+  opacity: 1;
+  z-index: 1;
+}
+
+.img2 {
+  animation: fadeInOut2 6s infinite ease-in-out;
+  opacity: 0;
+  z-index: 0;
+}

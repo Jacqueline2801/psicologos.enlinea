@@ -1,0 +1,25 @@
+@use "../config/variables" as vars;
+@use "../config/tipo" as tipo;
+@use "../config/reset" as reset;
+.block-element {
+  background-color: vars.$secundary-color;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px vars.$grid-color;
+  font-size: vars.$font-size;
+  font-family: tipo.$fonttext;
+}
+
+.block-element img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}

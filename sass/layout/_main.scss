@@ -1,0 +1,17 @@
+@use "../config/variables" as vars;
+@use "../config/tipo" as tipo;
+@use "../config/reset" as reset;
+
+.main-content {
+  grid-area: content;
+  width: 100%;
+}
+.content {
+  h1,
+  h2 {
+    text-align: center;
+    color: vars.$secundary-color;
+    font-family: tipo.$fonttext;
+    font-size: vars.$font-size-h;
+  }
+}

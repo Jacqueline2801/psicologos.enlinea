@@ -1,0 +1,19 @@
+@use "./config/tipo";
+@use "./config/variables";
+@use "./config/reset";
+
+@use "./layout/grid";
+@use "./layout/responsive";
+@use "./layout/main";
+@use "./layout/animaciones";
+
+@use "./components/logo";
+@use "./components/buttons";
+@use "./components/header";
+@use "./components/faq";
+@use "./components/footer";
+@use "./components/block";
+@use "./components/map";
+@use "./components/formulario";
+@use "./components/inline";
+@use "./components/social";

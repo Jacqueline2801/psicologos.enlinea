@@ -1,0 +1,21 @@
+@use "../config/variables" as vars;
+@use "../config/tipo" as tipo;
+@use "../config/reset" as reset;
+
+.social-media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: vars.$social-gap;
+  margin-top: vars.$social-gap;
+
+  a {
+    color: vars.$social-color;
+    font-size: vars.$social-font-size;
+    text-decoration: none;
+
+    &:hover {
+      color: vars.$social-hover-color;
+    }
+  }
+}
